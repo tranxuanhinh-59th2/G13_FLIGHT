@@ -14,6 +14,7 @@
 
 <body>
     <div id="app">
+        
         <header class="top">
             <div class="header-left">
                 <a class="typography-logo" href="">
@@ -89,8 +90,8 @@
                 <div class="text-right">
                     <button class="seat-lookupd" type="botton">Tra cứu đặt chỗ</button>
                 </div>
-
             </div>
+
             <div class="content-center">
                 <div class="content-center-top">
                     <div class="content-center-block">
@@ -109,25 +110,25 @@
                                         <div class="mb-3">
                                             <label for="formGroupExampleInput" class="lable-address">Điểm khởi hành</label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>                              
+                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>
                                                 <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
                                             </div>
-                                        </div>   
+                                        </div>
                                     </div>
                                     <div class="col">
                                         <div class="mb-3">
                                             <label for="formGroupExampleInput" class="lable-address">Điểm đến</label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-arrival"></i></span>                              
+                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-arrival"></i></span>
                                                 <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
-                                    </div>                           
+                                    </div>
                                     <div class="col">
                                         <div class="mb-3">
                                             <label for="formGroupExampleInput" class="lable-address">Ngày đi</label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-alt"></i></span>                              
+                                                <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-alt"></i></span>
                                                 <input type="text" class="form-control" placeholder="Ngày đi" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
@@ -136,30 +137,48 @@
                                         <div class="mb-3">
                                             <label for="formGroupExampleInput" class="lable-address">Số hành khách</label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-friends"></i></span>                              
+                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-friends"></i></span>
                                                 <input type="text" class="form-control" value="1 người lớn, 0 trẻ em, 0 em bé" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
                                     </div>
-                                </div>   
+                                </div>
                             </div>
                             <div class="check-seach">
                                 <button class="btn-check-seach" type="button">Tìm kiếm</button>
                             </div>
                         </div>
+
                     </div>
-                    
-                    
-                    
+                </div>
+
+
+            </div>
+            <div class="content-bottom">
+                <div class="block-bottom">
+                    <div class="img-left">
+                        <img src="" alt="">
+                    </div>
+                    <div class="contacst">
+                        <span>
+                            <h4>Tổng đài chăm sóc khách hàng</h4>
+                            <a href="#">1900571248</a>
+                        </span>
+                    </div>
+                    <div class="care-account">
+                        <span>
+                            <h4>Tài khoản trung tâm chăm sóc khách hàng</h4>
+                            <a href="#">https://www.hahalolo.com/@chamsockhachhang</a>
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="content-center-bottom">
+            
+        </nav>
 
-            </div>
-
-    
-            <!-- <div class="content-footer">
+        <footer class="footer">
+             <div class="content-footer">
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card h-100" style="width: 18rem;">
@@ -193,10 +212,7 @@
                     </div>
                 </div>
 
-            </div>-->
-        </nav> 
-        <footer>
-
+            </div>
         </footer>
 
     </div>
