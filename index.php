@@ -14,7 +14,7 @@
 
 <body>
     <div id="app">
-        
+
         <header class="top">
             <div class="header-left">
                 <a class="typography-logo" href="">
@@ -31,31 +31,45 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-bangtin" aria-current="page" href="#"><i class="fas fa-newspaper"></i>Bảng tin</a>
+                            <a class="nav-icon" aria-current="page" href="#">
+                                <div class="icon"><i class="fas fa-newspaper"></i></div>Bảng tin
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-tour" href="#"><i class="fab fa-fly"></i>Trải nghiệm</a>
-                        </li>
-                        <li class="nav-item">
-
-                            <a class="nav-tour" href="#"><i class="fas fa-map-marked-alt"></i>Tour</a>
-                        </li>
-                        <li class="nav-item">
-
-                            <a class="nav-khachsan" href="#"><i class="fas fa-building"></i>Khách sạn</a>
+                            <a class="nav-icon" href="#">
+                                <div class="icon"><i class="fab fa-fly"></i></div>Trải nghiệm
+                            </a>
                         </li>
                         <li class="nav-item">
 
-                            <a class="nav-ve" href="#"><i class="fas fa-plane-departure"></i>vé máy bay</a>
+                            <a class="nav-icon" href="#">
+                                <div class="icon"><i class="fas fa-map-marked-alt"></i></div>Tour
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-icon" href="#">
+                                <div class="icon"><i class="fas fa-building"></i></div> Khách sạn
+                            </a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-icon" href="#">
+                                <div class="icon"><i class="fas fa-plane-departure"></i></div>vé máy bay
+                            </a>
                         </li>
 
                         <li class="nav-item">
 
-                            <a class="nav-thuexe" href="#"><i class="fas fa-car"></i>Cho thuê xe</a>
+                            <a class="nav-icon" href="#">
+                                <div class="icon"><i class="fas fa-car"></i></div>Cho thuê xe
+                            </a>
                         </li>
                         <li class="nav-item">
 
-                            <a class="nav-shopping" href="#"><i class="fas fa-shopping-bag"></i>Mua sắm</a>
+                            <a class="nav-icon" href="#">
+                                <div class="icon"><i class="fas fa-shopping-bag"></i></div>Mua sắm
+                            </a>
                         </li>
 
                     </ul>
@@ -64,23 +78,29 @@
             <div class="header-right">
                 <ul class="menu-right">
                     <li class="nav-item" data-bs-placement="bottom" title="Giỏ hàng">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+                        </a>
                     </li>
                     <li class="nav-item" data-bs-placement="bottom" title="Tài khoản thanh toán">
-                        <a class="nav-link" href="#"><i class="fas fa-id-card"></i></a>
+                        <a class="nav-link" href="#">
+                            <div class="icon"><i class="fas fa-id-card"></i></div>
+                        </a>
                     </li>
                     <li class="nav-item" data-bs-placement="bottom" title="Messenger">
-                        <a class="nav-link" href="#"><i class="far fa-comment"></i></a>
+                        <a class="nav-link" href="#">
+                            <div class="icon"><i class="far fa-comment"></i></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <i class="fas fa-user-circle"></i>
+                        <div class="icon-user"><i class="fas fa-user-circle"></i></div>
                     </li>
                 </ul>
 
             </div>
         </header>
 
-        <nav id="content">
+        <nav class="content">
             <div class="content-header">
                 <div class="text-left">
                     <b>
@@ -96,116 +116,314 @@
                 <div class="content-center-top">
                     <div class="content-center-block">
                         <div class="content-center-top-left">
-                            <button class="btn-btn-primary" type="button">Một Chiều</button>
-                            <button class="btn-btn-primary" type="button">Khứ Hồi</button>
-                            <button class="btn-btn-primary" type="button">Nhiều Chặng</button>
-                        </div>
-                        <div class="content-center-mid">
-                            <span></span>
-                        </div>
-                        <div class="content-center-top-dow">
-                            <div class="flightsearch">
-                                <div class="row align-items-start">
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="formGroupExampleInput" class="lable-address">Điểm khởi hành</label>
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>
-                                                <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                    Một Chiều
+                                </button>
+                            </p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                    Khứ Hồi
+                                </button>
+                            </p>
+                            <p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                    Nhiều Chặng
+                                </button>
+                            </p>
+
+                            <div style="min-height: 90px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: 100%;">
+                                        <div class="flightsearch">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <div class="mb-3">
+                                                        <label for="formGroupExampleInput" class="lable-address">Điểm khởi hành</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="mb-3">
+                                                        <label for="formGroupExampleInput" class="lable-address">Điểm đến</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-arrival"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="mb-3">
+                                                        <label for="formGroupExampleInput" class="lable-address">Ngày đi</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-alt"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Ngày đi" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="mb-3">
+                                                        <label for="formGroupExampleInput" class="lable-address">Số hành khách</label>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-friends"></i></span>
+                                                            <input type="text" class="form-control" value="1 người lớn, 0 trẻ em, 0 em bé" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="formGroupExampleInput" class="lable-address">Điểm đến</label>
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-arrival"></i></span>
-                                                <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="formGroupExampleInput" class="lable-address">Ngày đi</label>
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-alt"></i></span>
-                                                <input type="text" class="form-control" placeholder="Ngày đi" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="formGroupExampleInput" class="lable-address">Số hành khách</label>
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-friends"></i></span>
-                                                <input type="text" class="form-control" value="1 người lớn, 0 trẻ em, 0 em bé" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
-                                            </div>
+                                        <div class="check-seach">
+                                            <button class="btn-check-seach" type="button">Tìm kiếm</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="check-seach">
-                                <button class="btn-check-seach" type="button">Tìm kiếm</button>
-                            </div>
                         </div>
-
                     </div>
+
+
                 </div>
-
-
             </div>
             <div class="content-bottom">
-                <div class="block-bottom">
-                    <div class="img-left">
-                        <img src="" alt="">
+                    <div class="block-bottom">
+                        <div class="img-left">
+                            <img src="assets/images/tongdai.png" alt="no img">
+                        </div>
+                        <div class="contacst">
+                            <span>
+                                <h4>Tổng đài CSKH</h4>
+                                <a href="#">1900571248</a>
+                            </span>
+                        </div>
+                        
+                        <div class="care-account">
+                            <span>
+                                <h4>Tài khoản trung tâm chăm sóc khách hàng</h4>
+                                <a href="#">https://www.hahalolo.com/@chamsockhachhang</a>
+                            </span>
+                        </div>
                     </div>
-                    <div class="contacst">
-                        <span>
-                            <h4>Tổng đài chăm sóc khách hàng</h4>
-                            <a href="#">1900571248</a>
-                        </span>
-                    </div>
-                    <div class="care-account">
-                        <span>
-                            <h4>Tài khoản trung tâm chăm sóc khách hàng</h4>
-                            <a href="#">https://www.hahalolo.com/@chamsockhachhang</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            
+            </div>   
         </nav>
 
         <footer class="footer">
-             <div class="content-footer">
+            <div class="content-footer">
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     <div class="col">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="assets/images/images.jpg" class="card-img-top" alt="no img">
+                        <div class="card h-100" style="width:100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images.jpg" class="card-img-top" alt="no img">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h6 class="card-title"><b>BAMBOO AIRWAYS GIẢM TỚI 70% GIÁ VÉ CHO CÁC ĐƯỜNG BAY</b></h6>
+                                <p class="card-text">Chẳng còn phải quá đắn đo với những kế hoạch ngày xuân khi đã có Bamboo Airways với ưu đãi ngay vào dịp Tết này! Chỉ cần đặt vé cho nhóm từ 02 người, bạn sẽ được giảm ngay 25% cho giá vé bay, lại được nhận ưu đãi đổi tên miễn phí (*) cực tâm lí nữa. Đi chơi xa hay về nhà cũng đừng bỏ qua “lì xì” bay Tết nhà Tre nhé!</p>
                                 <a href="#" class="btn"> <b>Chi tiết</b></a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="assets/images/images (2).jpg" class="card-img-top" alt="no img">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (2).jpg" class="card-img-top" alt="no img">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a short card.</p>
+                                <h6 class="card-title"><b>TẾT NÀY BAY AN TOÀN CÙNG VIETJET THÔI!</b></h6>
+                                <p class="card-text">Với mong muốn được cùng tất cả hành khách chở Tết Nhâm Dần về nhà và kết nối hương vị Xuân phương xa, Vietravel Airlines chính thức mở bán hàng nghìn vé ưu đãi với giá chỉ từ 518k (chưa bao gồm thuế, phí) trên tất cả các đường bay nội địa hãng đang khai thác.</p>
                                 <a href="#" class="btn"><b>Chi tiết</b></a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                <h6 class="card-title"><b>MUA VÉ ĐI TẶNG VÉ VỀ - BAY CÔN ĐẢO SAY MÊ CÙNG NHÀ TRE</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>BAMBOO AIRWAYS GIẢM TỚI 70% GIÁ VÉ CHO CÁC ĐƯỜNG BAY</b></h6>
+                                <p class="card-text">Chẳng còn phải quá đắn đo với những kế hoạch ngày xuân khi đã có Bamboo Airways với ưu đãi ngay vào dịp Tết này! Chỉ cần đặt vé cho nhóm từ 02 người, bạn sẽ được giảm ngay 25% cho giá vé bay, lại được nhận ưu đãi đổi tên miễn phí (*) cực tâm lí nữa. Đi chơi xa hay về nhà cũng đừng bỏ qua “lì xì” bay Tết nhà Tre nhé!</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>MUA VÉ ĐI TẶNG VÉ VỀ - BAY CÔN ĐẢO SAY MÊ CÙNG NHÀ TRE</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>CHỞ MAI ĐÀO TRÊN NHỮNG CHUYẾN BAY XUÂN</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>CÙNG VIETRAVEL AIRLINES XUÂN CHỌN ĐOÀN VIÊN, TẾT THÊM SUNG TÚC</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>HAHALOLO TUYỂN ĐẠI LÝ VÉ MÁY BAY CẤP 2 TRÊN TOÀN QUỐC.</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>HƯỚNG DẪN BAY AN TOÀN DÀNH CHO KHÁCH BAY NỘI ĐỊA</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width:100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images.jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>BAMBOO AIRWAYS GIẢM TỚI 70% GIÁ VÉ CHO CÁC ĐƯỜNG BAY</b></h6>
+                                <p class="card-text">Chẳng còn phải quá đắn đo với những kế hoạch ngày xuân khi đã có Bamboo Airways với ưu đãi ngay vào dịp Tết này! Chỉ cần đặt vé cho nhóm từ 02 người, bạn sẽ được giảm ngay 25% cho giá vé bay, lại được nhận ưu đãi đổi tên miễn phí (*) cực tâm lí nữa. Đi chơi xa hay về nhà cũng đừng bỏ qua “lì xì” bay Tết nhà Tre nhé!</p>
+                                <a href="#" class="btn"> <b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (2).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>TẾT NÀY BAY AN TOÀN CÙNG VIETJET THÔI!</b></h6>
+                                <p class="card-text">Với mong muốn được cùng tất cả hành khách chở Tết Nhâm Dần về nhà và kết nối hương vị Xuân phương xa, Vietravel Airlines chính thức mở bán hàng nghìn vé ưu đãi với giá chỉ từ 518k (chưa bao gồm thuế, phí) trên tất cả các đường bay nội địa hãng đang khai thác.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>MUA VÉ ĐI TẶNG VÉ VỀ - BAY CÔN ĐẢO SAY MÊ CÙNG NHÀ TRE</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>BAMBOO AIRWAYS GIẢM TỚI 70% GIÁ VÉ CHO CÁC ĐƯỜNG BAY</b></h6>
+                                <p class="card-text">Chẳng còn phải quá đắn đo với những kế hoạch ngày xuân khi đã có Bamboo Airways với ưu đãi ngay vào dịp Tết này! Chỉ cần đặt vé cho nhóm từ 02 người, bạn sẽ được giảm ngay 25% cho giá vé bay, lại được nhận ưu đãi đổi tên miễn phí (*) cực tâm lí nữa. Đi chơi xa hay về nhà cũng đừng bỏ qua “lì xì” bay Tết nhà Tre nhé!</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>MUA VÉ ĐI TẶNG VÉ VỀ - BAY CÔN ĐẢO SAY MÊ CÙNG NHÀ TRE</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>CHỞ MAI ĐÀO TRÊN NHỮNG CHUYẾN BAY XUÂN</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>CÙNG VIETRAVEL AIRLINES XUÂN CHỌN ĐOÀN VIÊN, TẾT THÊM SUNG TÚC</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>HAHALOLO TUYỂN ĐẠI LÝ VÉ MÁY BAY CẤP 2 TRÊN TOÀN QUỐC.</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
+                                <a href="#" class="btn"><b>Chi tiết</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 100%;">
+                            <div class="img-infor">
+                                <img src="assets/images/images (1).jpg" class="card-img-top" alt="no img">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"><b>HƯỚNG DẪN BAY AN TOÀN DÀNH CHO KHÁCH BAY NỘI ĐỊA</b></h6>
+                                <p class="card-text">Nhu cầu di chuyển cuối năm của hành khách đang có sức tăng rất lớn. Theo đó, Bamboo Airways khởi chạy chương trình khuyến mãi dành cho một số đường bay hot dịp cuối năm. Với chương trình ưu đãi của Bamboo Airways, hành khách sẽ có thêm lựa chọn để trải nghiệm dịch vụ hàng không chất lượng cao với chi phí hợp lý.</p>
                                 <a href="#" class="btn"><b>Chi tiết</b></a>
                             </div>
                         </div>
@@ -213,7 +431,7 @@
                 </div>
 
             </div>
-        </footer>
+        </footer> 
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

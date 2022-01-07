@@ -1,264 +1,281 @@
 body {
-    color: rgba(0, 0, 0, 0.87);
-    margin: 0;
-    font-size: 0.875rem;
-    overflow-x: hidden;
-    font-family: Mulish,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-weight: 400;
-    line-height: 1.43;
-    background-color: #FAFAFB;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+  font-family: Mulish, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #f0f0f0;
 }
 
-#app{
+#app {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(148, 177, 231);
+  position: relative;
+}
+
+#app > .top {
+  width: 100%;
+  height: 64px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+}
+.top > .header-left {
+  float: left;
+  height: 64px;
+  font-size: 48px;
+  margin-left: 25px;
+  background-color: rgb(255, 255, 255);
+  vertical-align: middle;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.top > .header-left > .typography-logo {
+  margin-top: 0px;
+  fill: currentColor;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  font-size: 0.5rem;
+}
+.top > .header-between {
+  width: 60%;
+  font-size: 13px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top > .header-between > .header-between-menu ul li {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0px 12px;
+}
+.top > .header-between > .header-between-menu ul li a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+}
+.top > .header-between > .header-between-menu ul li a:focus {
+  color: skyblue;
+}
+.top > .header-right ul {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.top > .header-right ul li.nav-item {
+  margin-top: 0px;
+
+  color: rgb(102, 102, 102);
+  padding: 4px 0px;
+  font-size: 0.9rem;
+  min-width: 120px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.icon {
+  font-size: large;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.top > .header-right {
+  font-size: larger;
+  float: right;
+  margin-top: -52px;
+  margin-right: 17px;
+  height: 48px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.top > .header-right ul li {
+  margin: 0 -33px;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+.top > .header-right ul li a {
+  color: rgb(102, 102, 102);
+}
+.icon-user {
+  font-size: 37px;
+}
+.content {
+  width: 94%;
+  margin-top: 0px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content > .content-header {
+  width: 100%;
+  height: 64px;
+  margin-top: 95px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.content > .content-header > .text-left {
+  float: left;
+  margin-top: 10px;
+}
+.content > .content-header > .text-left h5 {
+  font-size: 1.5rem;
+}
+.content > .content-header > .text-right {
+  float: right;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+.content > .content-header > .text-right > .seat-lookupd {
+  width: 155px;
+  height: 44px;
+  border: none;
+  border-radius: 99px;
+  background-color: rgb(55, 173, 55);
+  color: #fafafb;
+}
+.content > .content-header > .text-right > .seat-lookupd:hover {
+  background-color: rgb(28, 87, 28);
+  color: #fafafb;
+}
+.content > .content-center {
+  text-align: center;
+  justify-content: center;
+}
+.content-center-top {
+  text-align: center;
+  justify-content: center;
+}
+.content
+  > .content-center
+  > .content-center-top
+  > .content-center-block
+  > .content-center-top-left {
+  margin-top: 16px;
+  margin-left: 0px;
+  width: auto;
+  height: 48px;
+}
+.content
+  > .content-center
+  > .content-center-top
+  > .content-center-block
+  > .content-center-top-left
+  p {
+  float: left;
+  padding: 0px 5px;
+  display: inline-block;
+}
+
+.content-center-top-left.flightsearch {
+  width: 97%;
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lable-address {
+  float: left;
+  font-size: 12px;
+  color: rgb(112, 112, 112);
+}
+.check-seach > .btn-check-seach {
+  float: right;
+  margin-top: 80px;
+  margin-right: 10px;
+  width: 100px;
+  height: 44px;
+  border: none;
+  border-radius: 99px;
+  background-color: rgb(0, 89, 206);
+  color: #fafafb;
+}
+.check-seach > .btn-check-seach:hover {
+  background-color: rgb(8, 56, 119);
+  color: #fafafb;
+}
+.content > .content-bottom {
+  width: 100%;
+}
+.block-bottom {
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  background-color: #ffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.block-bottom > .img-left {
+  width: 56px;
+  height: 56px;
+  margin-left: 15px;
+  margin-top: 15px;
+
+  display: flex;
+  text-align: left;
+  justify-items: center;
+}
+.block-bottom > .contacst {
+  text-align: left;
+  display: flex;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.block-bottom > .contacst span a {
+  text-decoration: none;
+}
+.block-bottom > .contacst span h4 {
+  font-size: 20px;
+  color: rgb(117, 117, 117);
+}
+
+.care-account {
+  height: 60px;
+  text-align: left;
+  border-left: 0.7px solid #9e9e9e;
+  padding-left: 15px;
+  display: flex;
+  margin: auto;
+}
+.block-bottom > .care-account span h4 {
+  font-size: 20px;
+  color: rgb(117, 117, 117);
+}
+.block-bottom > .care-account span a {
+  text-decoration: none;
+}
+
+.footer {
+    margin-top: 400px;
+  width: 94%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer> .content-footer> .col{
     width: 100%;
-    height: 1000px;
-    background-color: rgb(148, 177, 231);
-    position: relative;
 }
-
-.top{
-    width: 100%;
-    height: 64px;
-    
-    flex-grow: 1;
-    max-width: 100%;
-    background-color: rgb(255, 255, 255);
-    
+.img-infor {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.header-left{
-    float: left;
-    height: 64px;
-    font-size: 48px;
-    margin-left: 20px;
-    background-color: rgb(255, 255, 255);
-    vertical-align: middle;
-}
-.icon-logo{
-    margin-bottom: 32px;
-    fill: currentColor;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    font-size: 1.5rem;
-}
-.header-between{
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    
-}
-    
-.header-between-menu ul li{
-    display: inline-block;
-    margin-top: 10px;
-}
-.header-between-menu ul li a{
-    text-decoration: none;
-    color: rgb(99, 99, 99);
-}
-.header-between ul li a:focus{
-    color: skyblue;
-}
-
-.nav-item{
-    margin-top: 0px;
-    color: rgba(66, 66, 66, 0.87);
-    padding: 4px 8px;
-    font-size: 0.80rem;
-    min-width: 80px;
-    border-radius: 4px;
-    
-}
-
-
-
-.fas{
-    font-size: large;
-    width: 100%;
-    display: inline-flex;
-    text-align: center;
-    vertical-align:top;
-}
-
-.header-right{
-    font-size: larger;
+.card-body a{
     float: right;
-    margin-top:-50px;
-    padding-right: 8px;
-    height: 48px;
-    box-sizing: border-box;
-    
-    align-items: center;
-
-    
-
+    vertical-align: bottom;
+  color: rgb(11, 116, 236);
+  background-color: #fff;
+  display: flex;
+  
 }
-.header-right ul li{
-    font-size: large;
-    margin: 0px -20px;
-    padding-right:8px;  
-    list-style: none;
-    text-align: center;
-    display:inline-block;
-    
-}
-.header-right ul li a{
-    
-    color: rgb(53, 52, 53);
-    
-}
-
-#content{
-    margin-top: 0px;  
-    text-align: center;
-    
-}
-.content-header{
-    width: 100%;
-    height: 64px;
-    margin-top: 30px;
-    display: inline-block;
-    vertical-align: middle;
-}
-.text-left{
-    
-    float: left;
-    margin-left: 45px;
-    margin-top: 10px;
-}
-.text-left h5{
-    font-size: 1.5rem;
-}
-.text-right{
-    float: right;
-    margin-top: 10px;
-    margin-right: 45px;
-
-}
-.seat-lookupd {
-    width: 155px;
-    height: 44px;
-    border: none;
-    border-radius: 99px;
-    background-color: rgb(55, 173, 55);
-    color: #FAFAFB;
-}
-.seat-lookupd:hover{
-    background-color: rgb(28, 87, 28);
-    color: #FAFAFB;
-}
-.content-center{
-    
-    text-align: center;
-    justify-content: center;
-    
-    
-}
-.content-center-top{
-    text-align: center;
-    justify-content: center;
-    position: relative;
-}
-.content-center-top-left{
-    float: left;
-    margin-top: 5px;
-    margin-left: 45px;
-    width: auto;
-    height: 48px;
-    position: absolute;
-    top: 10px;
-    
-}
-
-.content-center-mid span{
-    margin-top: 10px;
-    width: 100px;
-    height: 1px;
-    background-color:blue;
-}
-.btn-btn-primary {
-    width: 120px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    padding:0px 10px;
-    margin-right: 0;
-    color: rgb(54, 54, 54);
-    background-color: rgb(184, 184, 184);
-
-}
-.btn-btn-primary:hover{
-    color:rgb(44, 44, 44);
-    
-    background-color: rgba(97, 97, 97, 0.411);
-}
-.btn-btn-primary:focus{
-    color: #ffff;
-    background-color: rgb(56, 161, 209);
-}
-.content-center-top-dow{
-    
-    width: 94%;
-    height: 140px;
-    background-color: #ffff;
-    border-radius: 10px;
-    position: absolute;
-    top: 73px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.flightsearch{
-    width: 97%;
-    position: absolute;
-    margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.lable-address{
-    float: left;
-    font-size: 12px;
-    color: rgb(112, 112, 112);
-}
-.btn-check-seach{
-    float: right;
-    margin-top: 80px;
-    margin-right: 10px;
-    width: 100px;
-    height: 44px;
-    border: none;
-    border-radius: 99px;
-    background-color: rgb(0, 89, 206);
-    color: #FAFAFB;
-}
-.btn-check-seach:hover{
-    background-color: rgb(8, 56, 119);
-    color: #FAFAFB;
-}
-.content-bottom{
-    text-align: center;
-    justify-content: center;
-}
-.block-bottom{
-    width: 94%;
-    height: 140px;
-    background-color: #ffff;
-    border-radius: 10px;
-    position: absolute;
-    top: 73px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.footer{
-    float: right;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-.card-body a {
-    float: right;
-    color: rgb(11, 116, 236);
-    background-color: #fff;
-} 
