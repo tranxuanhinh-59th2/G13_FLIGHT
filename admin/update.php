@@ -183,37 +183,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-bottom">
-                                <div   div class="block-bottom">
-                                    <div class="img-left">
-                                        <img src="assets/images/tongdai.png" alt="no img">
-                                    </div>
-                                        <div class="contacst">
-                                            <span>
-                                                <h4>Tổng đài CSKH</h4>
-                                                <a href="#">1900571248</a>
-                                            </span>
-                                        </div>
-                                    
-                                        <div class="care-account">
-                                            <span>
-                                                <h4>Tài khoản trung tâm chăm sóc khách hàng</h4>
-                                                <a href="#">https://www.hahalolo.com/@chamsockhachhang</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
                         </div>
-                        </div>
-                       
+                    </div>
 
 
                 </div>
             </div>
-               
+            <div class="content-bottom">
+                    <div class="block-bottom">
+                        <div class="img-left">
+                            <img src="assets/images/tongdai.png" alt="no img">
+                        </div>
+                        <div class="contacst">
+                            <span>
+                                <h4>Tổng đài CSKH</h4>
+                                <a href="#">1900571248</a>
+                            </span>
+                        </div>
+                        
+                        <div class="care-account">
+                            <span>
+                                <h4>Tài khoản trung tâm chăm sóc khách hàng</h4>
+                                <a href="#">https://www.hahalolo.com/@chamsockhachhang</a>
+                            </span>
+                        </div>
+                    </div>
+            </div>   
         </nav>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="content-footer">
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     <div class="col">
@@ -435,7 +433,7 @@
                 </div>
 
             </div>
-        </footer>  -->
+        </footer> 
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

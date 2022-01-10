@@ -213,6 +213,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-top: 15px;
 }
 .block-bottom > .img-left {
   width: 56px;
