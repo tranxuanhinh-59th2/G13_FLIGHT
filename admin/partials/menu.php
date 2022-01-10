@@ -21,11 +21,8 @@
         <div class="menu text-center">
             <div class="wrapper">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="manage-admin.php">Admin</a></li>
-                    <li><a href="manage-category.php">Category</a></li>
-                    <li><a href="manage-subject.php">Subject</a></li>
-                    <li><a href="manage-student.php">Student</a></li>
+                    <li><a href="http://localhost/G13_FLIGHT/index.php">Home</a></li>
+                    <li><a href="http://localhost/G13_FLIGHT/admin/manage-flight.php">Admin</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>

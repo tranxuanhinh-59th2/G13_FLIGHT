@@ -134,7 +134,7 @@
                                 </button>
                             </p>
 
-                            <div style="min-height: 90px;">
+                            <div style="min-height: 90px;margin-bottom: 15px;">
                                 <div class="collapse collapse-horizontal" id="collapseWidthExample">
                                     <div class="card card-body" style="width: 100%;">
                                         <div class="flightsearch">
@@ -144,21 +144,80 @@
                                                         <label for="formGroupExampleInput" class="lable-address">Điểm khởi hành</label>
                                                         <div class="input-group mb-3">
                                                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>
-                                                            <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                                                            <!-- <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1"> -->
+                                                            <select name="diemdi"id="inputClass"  class="form-select idsub">
+                                                                <option ></option>                                                                   
+                                                                    <?php
+                                                                        //Truy vấn CSDL với PHP: 3 cách (mysqli_ thủ tục, mysqli_ oop, PDO)
+                                                                        //Bước 01: Kết nối tới Server
+                                                                        $conn = mysqli_connect('localhost','root','','banvemaybay');
+                                                                        if(!$conn){
+                                                                            die("Không thể kết nối");
+                                                                        }
+                                                                        //Bước 02: Định nghĩa và thực hiện truy vấn
+                                                                        //Chỉ muốn 3 bản ghi mới nhất > Theo các bạn, sửa thế nào?
+                                                                        $sql = "SELECT * FROM db_chuyenbay ";
+                                                                        $result = mysqli_query($conn,$sql);
+                                                                        //Bước 03: Xử lý Dữ liệu trả về
+                                                                        if(mysqli_num_rows($result) > 0){
+                                                                            //Lặp để lấy về từng bản ghi thông qua phương thức: mysqli_fetch_assoc
+                                                                            while($row = mysqli_fetch_assoc($result)){
+                                                                            $id = $row['ma_chuyen_bay'];
+                                                                            $dxp = $row['diem_xuat_phat'];
+                                                                            $dd = $row['diem_den'];
+                                                                            $time = $row['thoi_gian'];
+                                                                            $gia = $row['gia_ve'];
+                                                                    ?>               
+                                                                            <option value="<?php echo  $dxp ?>"><?php echo $dxp  ?></option>                                                                          
+                                                                    <?php
+                                                                            }
+                                                                        }
+                                                                    
+                                                                    ?>
+                                                                </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="mb-3">
+                                                    <div class="mb-3" method="POST">
                                                         <label for="formGroupExampleInput" class="lable-address">Điểm đến</label>
                                                         <div class="input-group mb-3">
                                                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-arrival"></i></span>
-                                                            <input type="text" class="form-control" placeholder="Nhập địa điểm" aria-label="Nhập điểm điến" aria-describedby="basic-addon1">
+                                                            <select name="diemden"id="inputClass"  class="form-select idsub">
+                                                                <option ></option>                                                                   
+                                                                    <?php
+                                                                        //Truy vấn CSDL với PHP: 3 cách (mysqli_ thủ tục, mysqli_ oop, PDO)
+                                                                        //Bước 01: Kết nối tới Server
+                                                                        $conn = mysqli_connect('localhost','root','','banvemaybay');
+                                                                        if(!$conn){
+                                                                            die("Không thể kết nối");
+                                                                        }
+                                                                        //Bước 02: Định nghĩa và thực hiện truy vấn
+                                                                        //Chỉ muốn 3 bản ghi mới nhất > Theo các bạn, sửa thế nào?
+                                                                        $sql = "SELECT * FROM db_chuyenbay ";
+                                                                        $result = mysqli_query($conn,$sql);
+                                                                        //Bước 03: Xử lý Dữ liệu trả về
+                                                                        if(mysqli_num_rows($result) > 0){
+                                                                            //Lặp để lấy về từng bản ghi thông qua phương thức: mysqli_fetch_assoc
+                                                                            while($row = mysqli_fetch_assoc($result)){
+                                                                            $id = $row['ma_chuyen_bay'];
+                                                                            $dxp = $row['diem_xuat_phat'];
+                                                                            $dd = $row['diem_den'];
+                                                                            $time = $row['thoi_gian'];
+                                                                            $gia = $row['gia_ve'];
+                                                                    ?>               
+                                                                            <option value="<?php echo  $dd ?>"><?php echo $dd  ?></option>                                                                          
+                                                                    <?php
+                                                                            }
+                                                                        }
+                                                                    
+                                                                    ?>
+                                                                </select>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="mb-3">
+                                                    <div class="mb-3" method="POST">
                                                         <label for="formGroupExampleInput" class="lable-address">Ngày đi</label>
                                                         <div class="input-group mb-3">
                                                             <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-alt"></i></span>
@@ -184,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="content-bottom">
-                                <div   div class="block-bottom">
+                                <div class="block-bottom">
                                     <div class="img-left">
                                         <img src="assets/images/tongdai.png" alt="no img">
                                     </div>
@@ -203,7 +262,7 @@
                                         </div>
                                     </div>
                                 </div>
-                        </div>
+                            </div>
                         </div>
                        
 

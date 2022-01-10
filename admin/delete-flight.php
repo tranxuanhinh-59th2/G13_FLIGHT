@@ -17,6 +17,7 @@
         //Delete Data from Database
         //SQL Query to Delete Data from Database
         $sql = "DELETE FROM db_chuyenbay WHERE ma_chuyen_bay=$id";
+        echo'Xóa thành công';
 
         //Execute the Query
         $res = mysqli_query($conn, $sql);
